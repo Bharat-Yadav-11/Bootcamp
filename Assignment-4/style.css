@@ -1,108 +1,87 @@
-* {
-      box-sizing: border-box;
+body {
       margin: 0;
       padding: 0;
+      background: #ffe4e1;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
     }
 
-    body {
-      font-family: 'Inter', sans-serif;
+    .card {
       background: #fff;
-      color: #000;
-      line-height: 1.6;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      border-bottom: 1px solid #ddd;
-      background-color: #ffc017;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #000;
-      font-weight: 500;
-    }
-
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 60px 40px;
-      background-color: #ffc017;
-      border-bottom: 1px solid #000;
-    }
-
-    .hero-text {
-      max-width: 50%;
-    }
-
-    .hero-text h2 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .hero-text p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-
-    .hero-text button {
-      background-color: #000;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 20px;
-    }
-
-    .trending-section {
       padding: 40px;
-      background: #f9f9f9;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1;
     }
 
-    .trending-section h3 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
+    .card h1 {
+      font-size: 2.5rem;
+      color: #ff69b4;
     }
 
-    .trending-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .trending-item {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 20px;
-    }
-
-    .trending-item h4 {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .trending-item p {
-      font-size: 0.9rem;
+    .card p {
+      font-size: 1.2rem;
       color: #555;
     }
 
-    footer {
-      padding: 20px 40px;
-      border-top: 1px solid #ddd;
-      background: #f1f1f1;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
+    .balloon {
+      position: absolute;
+      width: 40px;
+      height: 55px;
+      background: radial-gradient(circle at 30% 30%, #ff6f91, #ff4e50);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 2px;
+      height: 30px;
+      background: #333;
+      transform: translateX(-50%);
+    }
+
+    .balloon:nth-child(1) {
+      left: 10%;
+      animation-delay: 0s;
+    }
+
+    .balloon:nth-child(2) {
+      left: 30%;
+      animation-delay: 2s;
+    }
+
+    .balloon:nth-child(3) {
+      left: 60%;
+      animation-delay: 4s;
+    }
+
+    .balloon:nth-child(4) {
+      left: 80%;
+      animation-delay: 1s;
+    }
+
+    @keyframes float {
+      0% {
+        bottom: -60px;
+        opacity: 0;
+        transform: translateY(0);
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        bottom: 110%;
+        transform: translateY(-200px);
+        opacity: 0;
+      }
     }

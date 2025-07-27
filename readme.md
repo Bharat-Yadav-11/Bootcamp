@@ -1,6 +1,4 @@
-# Bootcamp
-
-# 🚀 MERN Stack Full-Stack Developer Bootcamp
+# 🚀 MERN Stack Developer Bootcamp
 
 This repository contains the learning resources, code samples, and projects completed during the **MERN Stack Bootcamp** organized by our college. The bootcamp aimed to equip students with industry-ready **Full-Stack Development** skills using **MongoDB, Express.js, React.js, and Node.js**.
 
@@ -8,7 +6,7 @@ This repository contains the learning resources, code samples, and projects comp
 **4 Weeks** – Intensive hands-on training and real-world project building.
 
 ## 🧑‍🏫 Organized By
-Department of Computer Science & Engineering, [Your College Name]  
+Department of Computer Science & Engineering, **K. R. Mangalam University**
 In collaboration with industry mentors and alumni professionals.
 
 ---

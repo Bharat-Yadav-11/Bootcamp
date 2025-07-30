@@ -6,7 +6,7 @@ This repository contains the learning resources, code samples, and projects comp
 **4 Weeks** – Intensive hands-on training and real-world project building.
 
 ## 🧑‍🏫 Organized By
-Department of Computer Science & Engineering, **K. R. Mangalam University**
+Department of Computer Science & Engineering, [**K. R. Mangalam University**]
 In collaboration with industry mentors and alumni professionals.
 
 ---
@@ -93,7 +93,7 @@ Also, a big shoutout to all the peers who collaborated and learned together.
 ## 🔗 Let's Connect
 
 Feel free to explore the repository and raise issues or suggestions.  
-Connect with me on [LinkedIn](https://linkedin.com/in/your-profile) or check out my [Portfolio](https://your-portfolio-link.com)
+Connect with me on [LinkedIn](https://linkedin.com/in/bharatdev) or check out my [Portfolio](https://bharat-bhushan.co)
 
 
 

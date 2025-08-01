@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffeb3b;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ffeb3b;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 2px solid #ffeb3b;
+    color: #ffeb3b;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #333;
+}
+
+/* Light Theme */
+.light-mode {
+    background-color: #f7f7f7;
+    color: #1e1e1e;
+}
+
+.light-mode .cell {
+    background-color: #ffffff;
+    border: 2px solid #ffeb3b;
+    color: #1e1e1e;
+}
+
+.light-mode .cell.x {
+    color: #e65100;
+}
+
+.light-mode .cell.o {
+    color: #0277bd;
+}
+
+.light-mode .message {
+    color: #ff9800;
+    text-shadow: none;
+}
+
+.light-mode h1 {
+    color: #ff9800;
+    text-shadow: none;
+}
+
+.light-mode .theme-toggle {
+    color: #ff9800;
+    border-color: #ff9800;
+}
+
+.light-mode button {
+    background-color: #fff;
+    color: #ff9800;
+    border-color: #ff9800;
+}
+
+.light-mode button:hover {
+    background-color: #eee;
+    box-shadow: 0 0 10px #ff9800;
+}
+
+/* Board Grid */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cell {
+    background-color: #1e1e1e;
+    border: 2px solid #ffeb3b;
+    color: #ffeb3b;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 235, 59, 0.4);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.cell:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Player Colors */
+.cell.x {
+    color: #ff9800;
+}
+
+.cell.o {
+    color: #03a9f4;
+}
+
+.message {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    color: #fdd835;
+    text-shadow: 0 0 5px #fdd835;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #ffeb3b;
+    border: 2px solid #ffeb3b;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+    box-shadow: 0 0 10px #ffeb3b;
+}
